@@ -1331,6 +1331,7 @@ html.show-mobile-nav .navbar-list {
 }
 .article-entry th {
   font-weight: bold;
+  white-space: nowrap;
   border-bottom: 3px solid #ddd;
   padding-bottom: 0.5em;
 }
