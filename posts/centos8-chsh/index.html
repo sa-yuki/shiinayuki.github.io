@@ -129,16 +129,13 @@
 
       <section class="article-entry">
         <h1 id="Cetnos8-bash-chsh-未找到命令"><a href="#Cetnos8-bash-chsh-未找到命令" class="headerlink" title="Cetnos8 -bash: chsh: 未找到命令"></a>Cetnos8 -bash: chsh: 未找到命令</h1><p>安装zsh修改bash时发现usr/bin下没有chsh</p>
-<p>dnf新的包管理工具,类似yum</p>
+<p><code>dnf</code>,新一代的RPM软件包管理器<br>详细的看这里<a href="https://ipcmen.com/dnf" target="_blank" rel="noopener">https://ipcmen.com/dnf</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">dnf update<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">dnf -q provides <span class="hljs-string">'*/chsh'</span><br>util-linux-user-2.32.1-17.el8.x86_64 : libuser based util-linux utilities<br></code></pre></td></tr></table></figure>
-
-<p>可知chsh在package util-linux-user中</p>
-<p>用dnf安装就行</p>
+<p>可知chsh在package util-linux-user中<br>用dnf命令安装就行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">dnf install util-linux-user<br></code></pre></td></tr></table></figure>
-
-<p>完美解决.</p>
+<p>完美解决</p>
 <p>Google靠谱.<a href="https://forums.centos.org/viewtopic.php?f=54&t=73864" target="_blank" rel="noopener">参见原帖</a></p>
 
       </section>
