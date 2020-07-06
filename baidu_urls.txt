@@ -1,0 +1,3 @@
+https://blog.yuki.cool/posts/centos-install-configuration-on-my-zsh/
+https://blog.yuki.cool/posts/centos8-chsh/
+https://blog.yuki.cool/posts/activemq-interview/
